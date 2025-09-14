@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #fdfbf7; /* 米白底 */
+  background: #f9fbff;
   color: #333;
   line-height: 1.6;
 }
@@ -13,8 +13,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 5%;
-  background: white;
-  border-bottom: 1px solid #ddd;
+  background: #0d47a1; /* 深蓝色 */
+  color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -23,33 +23,32 @@ body {
   display: flex;
   align-items: center;
   font-weight: 700;
-  color: #C26845;
 }
 .nav-logo {
-  height: 45px;
+  height: 40px;
   margin-right: 10px;
 }
 .navbar a {
-  color: #333;
+  color: white;
   margin-left: 1.5rem;
   text-decoration: none;
   font-weight: 500;
 }
 .navbar a:hover,
 .navbar a.active {
-  color: #4A9A92;
+  text-decoration: underline;
 }
 
 /* Hero */
 .hero {
   text-align: center;
-  padding: 5rem 2rem;
-  background: #fdfbf7;
-  color: #333;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #1565c0, #42a5f5); /* 蓝色渐变 */
+  color: white;
 }
 .hero h1 {
-  font-size: 2.5rem;
-  color: #C26845;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 .hero p {
   font-size: 1.25rem;
@@ -59,22 +58,25 @@ body {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin: 0.5rem;
-  background: #C26845; /* 红棕色按钮 */
-  color: white;
+  background: white;
+  color: #1565c0;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
-.btn:hover { background: #4A9A92; } /* 青绿色 hover */
+.btn:hover {
+  background: #e3f2fd;
+  transform: translateY(-3px);
+}
 .btn-outline {
   background: transparent;
-  color: #C26845;
-  border: 2px solid #C26845;
+  color: white;
+  border: 2px solid white;
 }
 .btn-outline:hover {
-  background: #C26845;
-  color: white;
+  background: white;
+  color: #1565c0;
 }
 
 /* Section 标题 */
@@ -83,7 +85,7 @@ section h2 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
-  color: #C26845;
+  color: #0d47a1;
 }
 
 /* 卡片区 */
@@ -96,22 +98,26 @@ section h2 {
 .card {
   background: white;
   border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 2rem;
   flex: 1 1 250px;
   max-width: 300px;
   text-align: center;
-  border-top: 3px solid #4A9A92;
   transition: 0.3s;
 }
-.card h3 { color: #C26845; }
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
-.card a { color: #4A9A92; }
+.card h3 { color: #1565c0; }
+.card a {
+  color: #1565c0;
+  text-decoration: none;
+  font-weight: bold;
+}
+.card a:hover { text-decoration: underline; }
 
-/* 列表区（论文） */
+/* 列表区 */
 .list-section ul {
   list-style: none;
   padding: 0;
@@ -123,20 +129,19 @@ section h2 {
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  border-left: 4px solid #B28B53; /* 金棕色装饰 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-left: 4px solid #42a5f5;
 }
 
 /* 联系方式 */
 .contact { text-align: center; }
-.contact a { color: #4A9A92; text-decoration: none; }
+.contact a { color: #1565c0; text-decoration: none; }
 .contact a:hover { text-decoration: underline; }
 
 /* 页脚 */
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #f1ede9;
-  color: #333;
-  font-size: 0.9rem;
+  background: #0d47a1;
+  color: white;
 }
