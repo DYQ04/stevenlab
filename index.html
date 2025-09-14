@@ -1,49 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Steven Lab</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StevenLab - 科研主页</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="container">
-      <h1>Steven Lab</h1>
-      <p>Exploring the future of cancer research through technology and innovation.</p>
-      <a class="btn" href="https://github.com" target="_blank" rel="noopener">查看仓库</a>
-    </div>
+  <!-- 导航栏 -->
+  <header class="navbar">
+    <div class="logo">StevenLab</div>
+    <nav>
+      <a href="#home">主页</a>
+      <a href="#research">研究方向</a>
+      <a href="#publications">论文</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="content">
-    <section id="about">
-      <h2>关于本站</h2>
-      <p>欢迎来到 Steven Lab 网站。我们专注于通过技术创新推动癌症免疫研究。你可以在 <code>index.html</code> 中修改内容、在 <code>assets/style.css</code> 中调整样式。</p>
-    </section>
+  <!-- Hero 区 -->
+  <section id="home" class="hero">
+    <h1>StevenLab</h1>
+    <p>临床医学 · 机器学习 · 医学影像</p>
+    <a href="#publications" class="btn">查看论文</a>
+    <a href="cv.pdf" class="btn btn-outline">下载简历</a>
+  </section>
 
-    <!-- Featured Research -->
-    <section id="research">
-      <h2>我们的研究</h2>
-      <p>我们专注于癌症免疫逃逸基因的研究，探索如何通过生物信息学分析为治疗方法提供新的见解。</p>
-      <a href="research.html" class="btn">了解更多</a>
-    </section>
+  <!-- 研究方向 -->
+  <section id="research" class="cards">
+    <h2>研究方向</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>医学影像分析</h3>
+        <p>利用深度学习方法提升影像诊断的准确性。</p>
+      </div>
+      <div class="card">
+        <h3>疾病风险预测</h3>
+        <p>构建基于临床数据和机器学习的预测模型。</p>
+      </div>
+      <div class="card">
+        <h3>老龄化健康研究</h3>
+        <p>跨国队列数据分析，探索社会经济与健康的关系。</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>联系我们</h2>
-      <p>想了解更多？联系我，加入我们一起探索未来的治疗方法。</p>
-      <a href="contact.html" class="btn">获取联系方式</a>
-    </section>
-  </main>
+  <!-- 论文 -->
+  <section id="publications" class="list-section">
+    <h2>论文发表</h2>
+    <ul>
+      <li>
+        <b>AECOPD Risk Assessment with Machine Learning</b><br>
+        <i>Journal of Medical AI, 2025</i> | <a href="#">DOI</a> | <a href="#">PDF</a> | <a href="#">GitHub</a>
+      </li>
+      <li>
+        <b>Liver Function Deterioration Prediction in HCC</b><br>
+        <i>Hepatology Research, 2024</i> | <a href="#">DOI</a> | <a href="#">PDF</a>
+      </li>
+    </ul>
+  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>© 2025 Steven Lab · stevenlab.top</p>
+  <!-- 项目 -->
+  <section id="projects" class="cards">
+    <h2>科研项目</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>AECOPD-RS 模型</h3>
+        <p>多算法机器学习 COPD 急性加重风险预测模型。</p>
+        <a href="https://github.com/DYQ04/stevenlab" target="_blank">查看项目</a>
+      </div>
+      <div class="card">
+        <h3>肝功能预测平台</h3>
+        <p>基于 XGBoost 的 HCC 患者肝功能恶化预测工具。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系方式 -->
+  <section id="contact" class="contact">
+    <h2>联系我</h2>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/DYQ04" target="_blank">DYQ04</a></p>
+    <p>ORCID: <a href="#" target="_blank">0000-0000-0000-0000</a></p>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>© 2025 StevenLab | Powered by GitHub Pages</p>
   </footer>
 </body>
-
 </html>
