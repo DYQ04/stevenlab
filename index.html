@@ -15,7 +15,12 @@
     window.location.replace("cover.html");
   }
 </script>
-
+<script>
+  // 检查用户是否访问过封面页面
+  if (!localStorage.getItem("hasVisited")) {
+    window.location.replace("cover.html");
+  }
+</script>
 <body>
   <!-- 导航栏 -->
   <header class="navbar">
