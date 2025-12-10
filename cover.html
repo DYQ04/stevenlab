@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to StevenLab</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet"> <!-- 更好看的字体 -->
   <style>
     /* 页面基本样式 */
     body, html {
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif; /* 使用更美观的字体 */
     }
 
     /* 封面区样式 */
@@ -20,7 +20,7 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: linear-gradient(135deg, #001f4d, #4d8fd7); /* 深蓝到浅蓝的渐变 */
+      background: linear-gradient(135deg, #001f4d, #000a26); /* 深蓝渐变，顶部渐变到底部中心 */
       color: white;
       text-align: center;
       flex-direction: column;
@@ -28,8 +28,8 @@
     }
 
     h1 {
-      font-size: 4rem;
-      font-weight: 600;
+      font-size: 6rem; /* 更大的字体 */
+      font-weight: 700;
       margin-bottom: 20px;
       text-transform: uppercase;
     }
@@ -38,6 +38,9 @@
       font-size: 1.5rem;
       margin-bottom: 30px;
       color: rgba(255, 255, 255, 0.8); /* 使副标题颜色更柔和 */
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .btn {
@@ -58,8 +61,8 @@
 </head>
 <body>
   <div class="cover-container">
-    <h1>StevenLab</h1>
-    <p>占位符：在这里添加副标题文本。</p> <!-- 占位符 -->
+    <h1>StevenLab</h1> <!-- 大标题只显示 StevenLab -->
+    <p>Pioneering research, unlocking the future of health, where every discovery is a step towards preserving life.</p> <!-- 副标题 -->
     <a href="index.html" class="btn" onclick="setVisited()">Learn more with us</a>
   </div>
 
