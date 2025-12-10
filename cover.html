@@ -6,36 +6,50 @@
   <title>Welcome to StevenLab</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    /* 页面基本样式 */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    /* 封面区样式 */
+    .cover-container {
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
-      background-color: #f7f7f7;
-      font-family: 'Inter', sans-serif;
-    }
-    .cover-container {
+      background: linear-gradient(135deg, #000000, #6a4c93);
+      color: white;
       text-align: center;
+      flex-direction: column;
+      padding: 20px;
     }
+
     h1 {
-      font-size: 3rem;
-      color: #333;
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-transform: uppercase;
     }
+
     p {
-      font-size: 1.2rem;
-      color: #555;
+      font-size: 1.5rem;
+      margin-bottom: 30px;
     }
+
     .btn {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1.1rem;
+      padding: 15px 40px;
       background-color: #007bff;
       color: white;
       text-decoration: none;
+      font-size: 1.2rem;
       border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
     }
+
     .btn:hover {
       background-color: #0056b3;
     }
@@ -43,9 +57,16 @@
 </head>
 <body>
   <div class="cover-container">
-    <h1>欢迎来到 StevenLab</h1>
-    <p>想通过自己的努力改变世界，哪怕只有一点点。</p>
-    <a href="index.html" class="btn">Learn more with us</a>
+    <h1>Meet StevenLab, your AI co-scientist</h1>
+    <p>Accelerate your scientific research from novel idea generation to experimental validation.</p>
+    <a href="index.html" class="btn" onclick="setVisited()">Learn more with us</a>
   </div>
+
+  <script>
+    // 点击按钮时设置用户已访问过封面页面
+    function setVisited() {
+      localStorage.setItem("hasVisited", "true");
+    }
+  </script>
 </body>
 </html>
