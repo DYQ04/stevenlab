@@ -28,6 +28,7 @@
     .publication-card img {
       width: 100%;
       border-radius: 8px;
+      margin: 10px 0;
     }
     .publication-card h3 {
       font-size: 1.5rem;
@@ -60,6 +61,14 @@
     .publication-actions a:hover {
       text-decoration: underline;
     }
+    .publication-images {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .publication-images img {
+      width: 48%; /* 控制每张图片的宽度 */
+    }
     .publication-info {
       margin-top: 20px;
     }
@@ -91,15 +100,12 @@
         <p><strong>DOI：</strong><a href="#">DOI</a></p>
       </div>
       <div class="publication-images">
+        <!-- 同时展示封面图和论文第一页 -->
         <img src="assets/publication1_cover.jpg" alt="Publication Cover" />
         <img src="assets/publication1_firstpage.jpg" alt="First Page" />
       </div>
       <div class="publication-actions">
-        <a href="#">查看封面</a>
-        <a href="#">查看第一页</a>
         <a href="#">引用格式</a>
-      </div>
-      <div class="publication-actions">
         <a href="#">PDF</a>
         <a href="#">GitHub</a>
       </div>
@@ -113,15 +119,12 @@
         <p><strong>DOI：</strong><a href="#">DOI</a></p>
       </div>
       <div class="publication-images">
+        <!-- 同时展示封面图和论文第一页 -->
         <img src="assets/publication2_cover.jpg" alt="Publication Cover" />
         <img src="assets/publication2_firstpage.jpg" alt="First Page" />
       </div>
       <div class="publication-actions">
-        <a href="#">查看封面</a>
-        <a href="#">查看第一页</a>
         <a href="#">引用格式</a>
-      </div>
-      <div class="publication-actions">
         <a href="#">PDF</a>
       </div>
     </div>
