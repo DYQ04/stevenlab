@@ -28,10 +28,13 @@
     }
 
     h1 {
-      font-size: 6rem; /* 更大的字体 */
+      font-size: 8rem; /* 更大的字体 */
       font-weight: 700;
       margin-bottom: 20px;
-      text-transform: uppercase;
+      text-transform: none; /* 保持原始大小写 */
+      background: linear-gradient(135deg, #001f4d, #4d8fd7); /* 渐变效果 */
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
     p {
@@ -61,7 +64,7 @@
 </head>
 <body>
   <div class="cover-container">
-    <h1>StevenLab</h1> <!-- 大标题只显示 StevenLab -->
+    <h1>StevenLab</h1> <!-- 大标题不再大写 -->
     <p>Pioneering research, unlocking the future of health, where every discovery is a step towards preserving life.</p> <!-- 副标题 -->
     <a href="index.html" class="btn" onclick="setVisited()">Learn more with us</a>
   </div>
