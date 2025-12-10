@@ -5,10 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>论文发表 - StevenLab</title>
   <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 样式部分 */
+    .publication-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 50px;
+    }
+    .publication-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .publication-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .publication-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .publication-card h3 {
+      font-size: 1.5rem;
+      margin: 20px 0 10px;
+    }
+    .publication-card p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .btn {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    .publication-actions {
+      display: flex;
+      justify-content: space-between;
+    }
+    .publication-actions a {
+      font-size: 1rem;
+      color: #007BFF;
+    }
+    .publication-actions a:hover {
+      text-decoration: underline;
+    }
+    .publication-info {
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
+  <!-- 导航栏 -->
   <header class="navbar">
-    <div class="logo">StevenLab</div>
+    <div class="logo">
+      <img src="assets/logo.png" alt="StevenLab Logo" class="nav-logo">
+      <span>StevenLab</span>
+    </div>
     <nav>
       <a href="index.html">主页</a>
       <a href="research.html">研究方向</a>
@@ -18,22 +81,55 @@
     </nav>
   </header>
 
-  <section class="content">
-    <h1>论文发表</h1>
-    <ul class="pub-list">
-      <li>
-        <b>AECOPD Risk Assessment with Machine Learning</b><br>
-        <i>Journal of Medical AI, 2025</i> |
-        <a href="#">DOI</a> | <a href="#">PDF</a> | <a href="#">GitHub</a>
-      </li>
-      <li>
-        <b>Liver Function Deterioration Prediction in HCC</b><br>
-        <i>Hepatology Research, 2024</i> |
-        <a href="#">DOI</a> | <a href="#">PDF</a>
-      </li>
-    </ul>
+  <!-- 页面内容 -->
+  <section class="publication-container">
+    <!-- 论文1 -->
+    <div class="publication-card">
+      <h3>AECOPD Risk Assessment with Machine Learning</h3>
+      <div class="publication-info">
+        <p><strong>期刊：</strong>Journal of Medical AI, 2025</p>
+        <p><strong>DOI：</strong><a href="#">DOI</a></p>
+      </div>
+      <div class="publication-images">
+        <img src="assets/publication1_cover.jpg" alt="Publication Cover" />
+        <img src="assets/publication1_firstpage.jpg" alt="First Page" />
+      </div>
+      <div class="publication-actions">
+        <a href="#">查看封面</a>
+        <a href="#">查看第一页</a>
+        <a href="#">引用格式</a>
+      </div>
+      <div class="publication-actions">
+        <a href="#">PDF</a>
+        <a href="#">GitHub</a>
+      </div>
+    </div>
+
+    <!-- 论文2 -->
+    <div class="publication-card">
+      <h3>Liver Function Deterioration Prediction in HCC</h3>
+      <div class="publication-info">
+        <p><strong>期刊：</strong>Hepatology Research, 2024</p>
+        <p><strong>DOI：</strong><a href="#">DOI</a></p>
+      </div>
+      <div class="publication-images">
+        <img src="assets/publication2_cover.jpg" alt="Publication Cover" />
+        <img src="assets/publication2_firstpage.jpg" alt="First Page" />
+      </div>
+      <div class="publication-actions">
+        <a href="#">查看封面</a>
+        <a href="#">查看第一页</a>
+        <a href="#">引用格式</a>
+      </div>
+      <div class="publication-actions">
+        <a href="#">PDF</a>
+      </div>
+    </div>
+
+    <!-- 更多论文可以继续添加 -->
   </section>
 
+  <!-- 页脚 -->
   <footer>
     <p>© 2025 StevenLab | Powered by GitHub Pages</p>
   </footer>
